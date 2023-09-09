@@ -37,8 +37,7 @@ Telas Grande: acima de 1200px
     }
 
     section#login {
-        width: 1200px;
-        height: 95%;
+        width: 990px;
     }
 
     section#login > div#imagem {
