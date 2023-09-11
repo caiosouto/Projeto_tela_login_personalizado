@@ -42,15 +42,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*bordas da imagem*/
 
     background-color: #fff;
     width: 250px;
-    height: 505px;
+    height: 530px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
-
+    
+    transform: translate(-50%, -50%);
     transition: widht .3s, height .3s;
     transition-timing-function: ease;
 
@@ -63,6 +63,7 @@ section#login > div#imagem {
     background-size: cover;
     background-position: right top;
     height: 200px;
+
 }
 
 section#login > div#form {
@@ -89,14 +90,48 @@ form > div.campo {
 
     display: block;
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
-    height: 45px;
-    border-radius: 5px;
-    margin: 5px 0px
+    height: 52px;
+    border-radius: 8px;
+    margin: 6px 0px;
+
 }
 
 div.campo > label { /*retirar/oculto o nome "login" e "senha"*/
+    
     display: none;
+
+}
+
+div.campo > span { /*icons*/
+   
+    color: #fff;
+    /*background-color: black;*/
+    font-size: 2rem;
+    width: 40px;
+    padding: 8px;
+
+}
+
+div.campo > input {
+
+    background-color:  #65f5f0;
+    font-size: 1rem;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 7px;
+    transform: translateY(-9px);
+
+}
+
+div.campo > input:focus-within { /*mudar de cor ao clicar*/
+
+    background-color: #fff;
+    outline: none; /*retirar as bordas*/
+
 }
 
 form > input[type=submit] {
